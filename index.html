@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask Japan Tickets – Concerts, Sports, Festivals &amp; Anime Events in Japan</title>
+  <meta name="description" content="Explore upcoming concerts, sports events, festivals, anime conventions, and live entertainment across Japan. Event information, ticket guidance, and concierge assistance.">
+  <link rel="canonical" href="https://askjapantickets.com/">
+  <style>
+    :root {
+      --bg: #f4f1ee;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --accent: #d7263d;
+      --accent-dark: #b01e31;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14141a;
+        --card: #1e1e26;
+        --text: #f2f2f5;
+        --muted: #a3a3b0;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+    }
+    .card {
+      width: 100%;
+      max-width: 380px;
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .12);
+      text-align: center;
+    }
+    .banner {
+      height: 96px;
+      background: linear-gradient(135deg, var(--accent), #ff7a59);
+    }
+    .avatar-wrap {
+      width: 112px;
+      height: 112px;
+      margin: -56px auto 0;
+      border-radius: 50%;
+      border: 4px solid var(--card);
+      background: var(--accent);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .avatar-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .body { padding: 16px 28px 30px; }
+    h1 { font-size: 1.5rem; margin: 12px 0 4px; }
+    .tag { color: var(--accent); font-weight: 600; font-size: .9rem; margin: 0 0 14px; }
+    p.desc { color: var(--muted); line-height: 1.6; font-size: .95rem; margin: 0 0 22px; }
+    .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 24px; }
+    .chips span {
+      font-size: .78rem;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: rgba(215, 38, 61, .1);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .btn {
+      display: block;
+      padding: 14px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background .2s, transform .2s;
+    }
+    .btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .btn:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card" itemscope itemtype="https://schema.org/Organization">
+      <div class="banner"></div>
+      <div class="avatar-wrap">
+        <img itemprop="logo"
+             src="https://images.unsplash.com/profile-1788683615304-1a9fd6fa9fcfimage?w=150&dpr=1&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
+             alt="Ask Japan Tickets profile picture"
+             width="112" height="112"
+             onerror="this.remove(); this.parentNode.textContent='AJT';">
+      </div>
+      <div class="body">
+        <h1 itemprop="name">Ask Japan Tickets</h1>
+        <p class="tag">Events &amp; Ticket Concierge in Japan</p>
+        <p class="desc" itemprop="description">
+          Explore upcoming concerts, sports events, festivals, anime conventions, and live entertainment across Japan. Find event information, ticket guidance, and concierge assistance for unforgettable experiences.
+        </p>
+        <div class="chips">
+          <span>Concerts</span><span>Sports</span><span>Festivals</span><span>Anime Cons</span><span>Live Shows</span>
+        </div>
+        <a class="btn" itemprop="url" href="https://askjapantickets.com/" target="_blank" rel="noopener">Visit askjapantickets.com</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
